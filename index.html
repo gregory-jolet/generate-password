@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Strong Password</title>
+  <link rel="stylesheet" href="./style/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+
+  <div class="container">
+    <h2 class="heading">Votre mot de passe</h2>
+    <div class="password-container">
+      <p class="password-content"></p>
+      <button class="copy-btn">
+        <img src="ressources/copy.svg" alt="copy icon">
+      </button>
+    </div>
+
+    <div class="range-group">
+      <label for="range">Force du mot de passe</label>
+      <input type="range" id="range" min="+4" max="30" value="10">
+    </div>
+
+    <div class="checkboxes-container">
+      <div class="checkbox-group">
+        <input type="checkbox" id="lowerCaseChars">
+        <label for="lowerCaseChars">Minuscules</label>
+      </div>
+
+      <div class="checkbox-group">
+        <input id="upperCaseChars" type="checkbox" />
+        <label for="upperCaseChars">Contient des caractères majuscules</label>
+      </div>
+
+      <div class="checkbox-group">
+        <input id="numbers" type="checkbox" />
+        <label for="numbers">Contient des nombres</label>
+      </div>
+
+      <div class="checkbox-group">
+        <input id="symbols" type="checkbox" />
+        <label for="symbols">Contient des symboles spéciaux</label>
+      </div>
+    </div>
+
+    <button class="generate-password">Générer</button>
+    <p class="error-message"></p>
+
+  </div>
+
+
+
+  <script src="./script/app.js"></script>
+</body>
+
+</html>
